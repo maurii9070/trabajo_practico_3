@@ -3,148 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <title>Programacion Visual 2024</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Programacion Visual 2024</h1>
-        <nav>
-            <div>
-                <strong>Menú</strong>
-            </div>
-            <ul>
-                <li><a href="#facultad" >Pagina Oficial</a></li>
-                <li><a href="#aula-virtual">Aula Virtual</a></li>
-                <li><a href="#sobre-java">¿Qué es Java? Guía de Java para principiantes</a></li>
-                <li><a href="#docentes">Docentes</a></li>
+    <header id="header">
+        <h1 class="titulo">Bienvenido a Programacion Visual 2024</h1>
+        <nav class="nav">
+            <ul class="list-items">
+                <li><a href="#facultad" class="link">Pagina Oficial</a></li>
+                <li><a href="#aula-virtual" class="link">Aula Virtual</a></li>
+                <li><a href="#sobre-java" class="link">¿Qué es Java?</a></li>
+                <li><a href="#docentes" class="link">Docentes</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="facultad">
-            <h2>Sobre la Facultad...</h2>
-            <article>
-                <div>
-                    <img src="/images/fiunju.jpg" alt="Facultad de Ingenieria Edificio">
-                </div>
-                <h3>Facultad de Ingeniería - Universidad Nacional de Jujuy</h3>
-                <p>
-                    La Facultad de Ingeniería de la Universidad Nacional de Jujuy es una institución
-                    educativa de nivel superior, pública y gratuita, que tiene como misión formar
-                    profesionales de la ingeniería con sólidos conocimientos científicos y tecnológicos,
-                    con capacidad de liderazgo y comprometidos con el desarrollo
-                    sustentable de la región y del país.
-                </p>
-                <a href="https://www.fi.unju.edu.ar/" target="_blank">Mas informacion...</a>
-            </article>
-        </section>
+    <div class="container">
+        <main class="contenido-principal">
+            <section class="info" id="facultad">
+                <h2 class="info-titulo">Sobre la Facultad...</h2>
+                <article>
+                    <div class="img-container">
+                        <img src="/images/fiunju.jpg" alt="Facultad de Ingenieria Edificio" class="image">
+                    </div>
+                    <div class="info-contenido">
+                        <h3>Facultad de Ingeniería - Universidad Nacional de Jujuy</h3>
+                        <p>
+                            La Facultad de Ingeniería de la Universidad Nacional de Jujuy es una institución
+                            educativa de nivel superior, pública y gratuita, que tiene como misión formar
+                            profesionales de la ingeniería con sólidos conocimientos científicos y tecnológicos,
+                            con capacidad de liderazgo y comprometidos con el desarrollo
+                            sustentable de la región y del país.
+                        </p>
+                        <a href="https://www.fi.unju.edu.ar/" target="_blank" class="link-info">Mas informacion...</a>
+                    </div>
+                </article>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="aula-virtual">
-            <h2>Aula Virtual - UnJu Virtual</h2>
-            <div>
-                <img src="/images/logo_unjuvirtual.png" alt="UnJu Virtual Edificio  ">
+            <section class="info" id="aula-virtual">
+                <h2 class="info-titulo">Aula Virtual - UnJu Virtual</h2>
+                <article>
+                    <div class="img-container">
+                        <img src="/images/logo_unjuvirtual.png" alt="UnJu Virtual Edificio" class="image">
+                    </div>
+                    <div class="info-contenido">
+                        <p>
+                            El Aula Virtual es una plataforma de educación a distancia que permite a los
+                            estudiantes acceder a los contenidos de las materias, realizar actividades y
+                            comunicarse con los docentes y compañeros.
+                        </p>
+                        <p>
+                            Para ingresar al Aula Virtual de Programacion Visual 2024 de la Facultad de Ingeniería de la Universidad
+                            Nacional de Jujuy, haga clic en el siguiente enlace:
+                        </p>
+                        <a href="https://virtual.unju.edu.ar/course/view.php?id=2540" target="_blank" class="link-info">Aula Virutal PV2024</a>
+                    </div>
+                </article>
+            </section>
+
+            <hr>
+
+            <section class="info" id="sobre-java">
+                <h2 class="info-titulo">¿Qué es Java? Guía de Java para principiantes</h2>
+                <article>
+                    <div class="img-container">
+                        <img src="/images/java-logo-png.png" alt="Java-Logo" class="image">
+                    </div>
+                    <div class="info-contenido">
+                        <p>
+                            Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos,
+                            que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible.
+                        </p>
+                        <p>
+                            Java es un lenguaje de programación de alto nivel, lo que significa que es más fácil de leer y escribir
+                            que otros lenguajes de programación. También es un lenguaje de programación orientado a objetos, lo que
+                            significa que se basa en la idea de que todo en un programa es un objeto.
+                        </p>
+                        <p>
+                            Para obtener más información sobre Java y cómo comenzar a programar en Java, visite el siguiente enlace:
+                        </p>
+                        <a
+                                href="https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-java-programming-language"
+                                target="_blank"
+                                class="link-info"
+                        >
+                            ¿Qué es Java? Guía de Java para principiantes
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <hr>
+
+            <section class="info" id="docentes">
+                <h2 class="info-titulo">Docentes de Programacion Visual 2024</h2>
+                <table>
+                    <tr>
+                        <th>Profesor</th>
+                        <th>Pactica o Teoria</th>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                    <tr>
+                        <td>Ariel Vega</td>
+                        <td>Teoria</td>
+                        <td>Miercoles</td>
+                        <td>14 a 17hs</td>
+                    </tr>
+                    <tr>
+                        <td>Carolina Apaza</td>
+                        <td>Practica</td>
+                        <td>Lunes</td>
+                        <td>18 a 21hs</td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo Sosa</td>
+                        <td>Practica</td>
+                        <td>Jueves</td>
+                        <td>14 a 17hs</td>
+                    </tr>
+                    <tr>
+                        <td>Juan Carlos Rodriguez</td>
+                        <td>Practica</td>
+                        <td>Viernes</td>
+                        <td>18 a 21hs</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <aside class="aside">
+            <h2 class="aside-titulo">Enlaces de interés</h2>
+            <ul class="nav-aside">
+                <li><a href="https://www.youtube.com/watch?v=BdNqW63ZaB0&t=5057s" target="_blank" class="aside-link">Curso Gratuito de Java</a></li>
+                <li><a href="hhttps://www.youtube.com/watch?v=ELSm-G201Ls" target="_blank" class="aside-link">Curso Gratuito de HTML y CSS</a></li>
+                <li><a href="https://www.ibm.com/mx-es/topics/java-spring-boot" target="_blank" class="aside-link">¿Que es Java Spring Boot?</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="redes-sociales">
+                <h3 class="redes-titulo">Redes Sociales</h3>
+                <ul class="redes-nav">
+                    <li><a href="https://www.facebook.com/fiunju/" target="_blank" class="redes-link">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/fiunju/" target="_blank" class="redes-link">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A" target="_blank" class="redes-link">Youtube</a></li>
+                    <li><a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju" target="_blank" class="redes-link">Linkedin</a></li>
+                </ul>
             </div>
-            <p>
-                El Aula Virtual es una plataforma de educación a distancia que permite a los
-                estudiantes acceder a los contenidos de las materias, realizar actividades y
-                comunicarse con los docentes y compañeros.
-            </p>
-            <p>
-                Para ingresar al Aula Virtual de Programacion Visual 2024 de la Facultad de Ingeniería de la Universidad
-                Nacional de Jujuy, haga clic en el siguiente enlace:
-            </p>
-            <a href="https://virtual.unju.edu.ar/course/view.php?id=2540" target="_blank">Aula Virutal PV2024</a>
-        </section>
 
-        <hr>
-
-        <section id="sobre-java">
-            <h2>¿Qué es Java? Guía de Java para principiantes</h2>
-            <div>
-                <img src="/images/java-logo-png.png" alt="Java-Logo">
+            <div class="footer-end">
+                <p>Correo electronico: <span>info@fi.unju.edu.ar</span></p>
+                <p>Copyright © 2014-2022 - Facultad de Ingeniería - UNJu</p>
             </div>
-            <p>
-                Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos,
-                que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible.
-            </p>
-            <p>
-                Java es un lenguaje de programación de alto nivel, lo que significa que es más fácil de leer y escribir
-                que otros lenguajes de programación. También es un lenguaje de programación orientado a objetos, lo que
-                significa que se basa en la idea de que todo en un programa es un objeto.
-            </p>
-            <p>
-                Para obtener más información sobre Java y cómo comenzar a programar en Java, visite el siguiente enlace:
-            </p>
-            <a
-                    href="https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-java-programming-language"
-                    target="_blank"
-            >
-                ¿Qué es Java? Guía de Java para principiantes
-            </a>
-        </section>
-
-        <hr>
-
-        <section id="docentes">
-            <h2>Docentes de Programacion Visual 2024</h2>
-            <table>
-                <tr>
-                    <th>Profesor</th>
-                    <th>Pactica o Teoria</th>
-                    <th>Dia</th>
-                    <th>Horario</th>
-                </tr>
-                <tr>
-                    <td>Ariel Vega</td>
-                    <td>Teoria</td>
-                    <td>Miercoles</td>
-                    <td>14 a 17hs</td>
-                </tr>
-                <tr>
-                    <td>Carolina Apaza</td>
-                    <td>Practica</td>
-                    <td>Lunes</td>
-                    <td>18 a 21hs</td>
-                </tr>
-                <tr>
-                    <td>Gustavo Sosa</td>
-                    <td>Practica</td>
-                    <td>Jueves</td>
-                    <td>14 a 17hs</td>
-                </tr>
-                <tr>
-                    <td>Juan Carlos Rodriguez</td>
-                    <td>Practica</td>
-                    <td>Viernes</td>
-                    <td>18 a 21hs</td>
-                </tr>
-            </table>
-        </section>
-    </main>
-
-    <aside>
-        <h2>Enlaces de interés</h2>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=BdNqW63ZaB0&t=5057s" target="_blank">Curso Gratuito de Java</a></li>
-            <li><a href="hhttps://www.youtube.com/watch?v=ELSm-G201Ls" target="_blank">Curso Gratuito de HTML y CSS</a></li>
-            <li><a href="https://www.ibm.com/mx-es/topics/java-spring-boot" target="_blank">¿Que es Java Spring Boot?</a></li>
-        </ul>
-    </aside>
-
-    <footer>
-        <h3>Redes Sociales</h3>
-        <ul>
-            <li><a href="https://www.facebook.com/fiunju/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/fiunju/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A" target="_blank">Youtube</a></li>
-            <li><a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju" target="_blank">Linkedin</a></li>
-        </ul>
-
-
-        <p>Correo electronico: <span>info@fi.unju.edu.ar</span></p>
-        <p>Copyright © 2014-2022 - Facultad de Ingeniería - UNJu</p>
+        </div>
     </footer>
 </body>
 </html>
